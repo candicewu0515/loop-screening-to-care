@@ -127,7 +127,7 @@ function render() {
   $('#filter-count').textContent=number(rows.length)+' / 5,000 synthetic people';
   $('#nav-count').textContent=M.summarize(patients(),ASOF).overdue;
   document.querySelectorAll('[data-page]').forEach(b=>{const active=b.dataset.page===page;b.classList.toggle('active',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
-  $('.snapshot').innerHTML=page==='scenarios'?'V3 experiment <strong>Full 180-day follow-up</strong>':'Snapshot <strong>06 Nov 2026</strong>';
+  $('.snapshot').innerHTML=page==='scenarios'?'Simulation experiment <strong>Full 180-day follow-up</strong>':'Snapshot <strong>06 Nov 2026</strong>';
   $('.filters').hidden=['models','scenarios'].includes(page);$('#export-btn').hidden=['models','scenarios'].includes(page);
   $('#content').innerHTML=page==='scenarios'?window.LoopScenarioLab.render(simulationState):page==='models'?window.LoopModelLab.render(modelCapacity):page==='cascade'?cascade(s):page==='worklist'?worklist(rows,s):page==='timing'?timing(rows,s):equity(rows,s);
   if(page==='equity')mapDetail('19103');
