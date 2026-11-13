@@ -5,10 +5,10 @@
 })(typeof globalThis !== 'undefined' ? globalThis : this, function(M) {
   'use strict';
   const stages = [
-    {id:'positive_to_referral',label:'Positive FIT → referral',zh:'阳性 → 转诊',action:'Verify the referral record; assign follow-up ownership.'},
-    {id:'referral_to_acceptance',label:'Referral → receiving-provider acceptance',zh:'转诊 → 接诊确认',action:'Confirm receipt, acceptance and accountable provider.'},
-    {id:'acceptance_to_booking',label:'Accepted referral → appointment',zh:'接诊确认 → 预约',action:'Review scheduling access and the documented support need.'},
-    {id:'appointment_to_procedure',label:'Appointment → completed colonoscopy',zh:'预约 → 检查完成',action:'Separate dates beyond the window from due appointments without completion evidence.'}
+    {id:'positive_to_referral',label:'Positive FIT → referral',action:'Verify the referral record; assign follow-up ownership.'},
+    {id:'referral_to_acceptance',label:'Referral → receiving-provider acceptance',action:'Confirm receipt, acceptance and accountable provider.'},
+    {id:'acceptance_to_booking',label:'Accepted referral → appointment',action:'Review scheduling access and the documented support need.'},
+    {id:'appointment_to_procedure',label:'Appointment → completed colonoscopy',action:'Separate dates beyond the window from due appointments without completion evidence.'}
   ];
   const plusDays = (date,n) => new Date(Date.parse(date+'T00:00:00Z')+n*86400000).toISOString().slice(0,10);
   const observed = (p,key,cutoff) => !!p[key] && p[key] <= cutoff;
