@@ -22,7 +22,7 @@ window.LoopScenarioLab=(function(){
   return shown.length?`<ol class="simulation-events">${shown.map(e=>`<li><span class="event-day">Day ${observed?e.visible_day:e.relative_day}</span><div><strong>${events[e.type]||esc(e.type)}</strong><small>${esc(detail(e,arrival))}${observed&&e.visible_day!==e.relative_day?` · occurred on day ${e.relative_day}`:''}</small></div></li>`).join('')}</ol>`:'<div class="empty">No events available at this time.</div>';
  }
  function auditPanels(r,state,all){
-  const modelNames={v2_truth_model:'Previous V2 model',observed_label_model:'V3 record-label model',truth_label_diagnostic:'V3 truth-label diagnostic'};
+  const modelNames={v2_truth_model:'Earlier frozen model',observed_label_model:'V3 record-label model',truth_label_diagnostic:'V3 truth-label diagnostic'};
   const ablationNames={no_contact:'Remove contact attempts',no_coordination:'Remove referral / booking coordination',no_support:'Remove preparation / transport support',no_reconciliation:'Remove record verification',reconciliation_only:'Record verification only'};
   const rs=r.risk_evaluation.filter(x=>x.condition===state.condition&&x.target==='actual');
   const ab=r.ablations.filter(x=>x.condition===state.condition);
