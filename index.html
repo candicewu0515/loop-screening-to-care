@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#43273e">
+  <meta name="description" content="Loop: a synthetic-data prototype for closing the FIT screening-to-care loop. Future Health Digital Innovation Challenge, Population Health.">
+  <title>Loop · Screening to care</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Loop · Closing the screening-to-care loop">
+  <meta property="og:description" content="Interactive synthetic-data prototype: see where FIT follow-up stalls, give every positive result a next step. No login required.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%2343273e'/%3E%3Ccircle cx='16' cy='20' r='9' fill='none' stroke='%23f0d9cf' stroke-width='3'/%3E%3Ccircle cx='25' cy='20' r='9' fill='none' stroke='%23c99cb5' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data/demo-data.js" defer></script>
+  <script src="metrics.js" defer></script>
+  <script src="leakage.js" defer></script>
+  <script src="modeling/model-data.js" defer></script>
+  <script src="model-lab.js" defer></script>
+  <script src="simulation_v3/simulation-data.js" defer></script>
+  <script src="scenario-lab.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to dashboard</a>
+  <aside class="sidebar">
+    <a class="brand" href="#cascade" aria-label="Loop home"><span class="brand-mark" aria-hidden="true">∞</span>loop<span class="brand-dot">.</span></a>
+    <div class="brand-caption">SCREENING TO CARE</div>
+    <button class="mobile-info" id="mobile-methods-btn" aria-label="Data and definitions">ⓘ Data notes</button>
+    <div class="workspace-label">CARE OPERATIONS <span>DEMO</span></div>
+    <nav aria-label="Dashboard pages" id="navigation">
+      <button data-page="cascade" class="active"><span class="nav-icon">▤</span>Care cascade</button>
+      <button data-page="worklist"><span class="nav-icon">☷</span>Action worklist<span id="nav-count" class="nav-count"></span></button>
+      <button data-page="timing"><span class="nav-icon">◷</span>Time to care</button>
+      <button data-page="equity"><span class="nav-icon">◫</span>Equity & context</button>
+      <button data-page="models"><span class="nav-icon">∿</span>Model lab</button>
+      <button data-page="scenarios"><span class="nav-icon">◇</span>Scenario lab</button>
+    </nav>
+    <div class="sidebar-note"><div class="mini-label">THE LOOP, CLOSED.</div><p>A clear next step.<br>An accountable owner.<br>Evidence of care.</p><span class="small-rule"></span><small>FIT → Colonoscopy<br>Population Health · Challenge 05</small></div>
+    <div class="sidebar-bottom"><button id="methods-btn">ⓘ &nbsp; Data & definitions</button><a href="docs/TECHNICAL_DOCUMENTATION.html" target="_blank">Technical documentation ↗</a><div class="competition-name">Future Health<br>Digital Innovation Challenge</div></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><div><span class="status-dot"></span> Synthetic patient workspace <span class="topbar-divider">/</span> Iowa demo</div><div class="snapshot">Snapshot <strong>06 Nov 2026</strong></div></header>
+    <main id="main" tabindex="-1">
+      <div class="page-heading"><div><div id="eyebrow" class="eyebrow">POPULATION HEALTH / CARE CASCADE</div><h1 id="page-title">A result is only the beginning.</h1><p id="page-subtitle">See where follow-up stalls. Give every positive result a next step.</p></div><button class="button secondary" id="export-btn">↓ &nbsp; Export cohort</button></div>
+      <div class="filters" aria-label="Cohort filters">
+        <span class="filter-label">View cohort</span>
+        <label><span class="sr-only">County</span><select id="county-filter"><option value="">All counties</option></select></label>
+        <label><span class="sr-only">Language</span><select id="language-filter"><option value="">All languages</option></select></label>
+        <label><span class="sr-only">Insurance</span><select id="insurance-filter"><option value="">All insurance</option></select></label>
+        <button class="text-button" id="reset-filters">Reset</button><span id="filter-count" class="filter-count"></span>
+      </div>
+      <div class="disclosure"><span class="disclosure-tag">SIMULATED</span><span>Every patient and outcome is fictional. Workflow actions stay in this browser; no messages are sent.</span></div>
+      <section id="content" aria-live="polite" aria-label="Dashboard content"><p class="small" style="padding:40px 0">Loading the synthetic cohort…</p></section>
+      <footer class="main-footer"><span>Loop · A solo prototype by Xia (Candice) Wu</span><span>Human oversight, at every transition.</span></footer>
+    </main>
+  </div>
+  <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-title"><div id="case-content"></div></dialog>
+  <dialog id="methods-dialog" class="methods-dialog" aria-labelledby="methods-title">
+    <div class="dialog-heading"><div><div class="eyebrow">READ THE NUMBERS CORRECTLY</div><h2 id="methods-title">Data & definitions</h2></div><button class="icon-button" data-close="methods-dialog" aria-label="Close data definitions">×</button></div>
+    <div class="definition-grid">
+      <article><h3>180-day completion</h3><p>Denominator: positive FIT episodes with at least 180 days of observation by 6 Nov 2026. Numerator: colonoscopy completed 0–180 days after the positive result. Recent positives remain in active follow-up and are excluded from both numerator and denominator.</p></article>
+      <article><h3>Workflow thresholds</h3><p>Kit return: over 30 days. Missing referral: over 14 days after positivity. Navigator queue: over 90 days without colonoscopy. Escalation: over 180 days. Closure review: over 14 days after colonoscopy. These are configurable demo rules, not universal clinical deadlines.</p></article>
+      <article><h3>Fictional patient data</h3><p>5,000 reproducible synthetic episodes, seed 20261106. All are assumed average-risk, asymptomatic and due for screening. No names, contact details or real patient records. Group differences reflect simulation and sampling; they are not evidence about communities.</p></article>
+      <article><h3>Real geographic context</h3><p>CDC PLACES 2025 release, 2022 BRFSS-based model estimates, crude prevalence, ages 45–75. County screening coverage is not positive-FIT follow-up. The map is independent of patient filters and cannot validate the fictional cohort.</p></article>
+      <article><h3>Completion is not closure</h3><p>Closure requires colonoscopy evidence, pathology when a specimen was collected (otherwise N/A), a documented plan, patient acknowledgement, an owner and human review. Reminders and approvals never fabricate clinical events.</p></article>
+      <article><h3>Prototype boundary</h3><p>There is no patient-facing messaging, EHR connection, diagnosis or treatment recommendation. Session audit records are editable local demonstration data, not a clinical audit system. No clinical effectiveness or regulatory status is claimed.</p></article>
+    </div>
+    <div class="note">This is a project-defined quality indicator, not a certified HEDIS implementation. A future pilot needs local pathway review, approved data access, consent, security controls and prospective evaluation.</div>
+    <div class="dialog-actions"><a class="button secondary" href="docs/SOURCES.html" target="_blank">Evidence & sources ↗</a><button class="button secondary" id="export-audit">Export session audit</button><button class="text-button danger-text" id="reset-session">Reset demo actions</button></div>
+    <p class="small" id="storage-status"></p>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><div class="noscript">Loop needs JavaScript to display the local synthetic dataset. You can still read <a href="docs/TECHNICAL_DOCUMENTATION.html">the technical documentation</a> or open <a href="data/cohort.csv">the synthetic CSV</a>.</div></noscript>
+</body>
+</html>

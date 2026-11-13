@@ -1,0 +1,157 @@
+patient_id,positive_date,prediction_date,label_available_date,last_feature_record_date,referral_by_day30,acceptance_by_day30,booking_by_day30,known_appointment_beyond180,stage_at_day30,missed_by180,language,insurance,county,split
+SYN-00357,2025-06-24,2025-07-24,2025-12-21,2025-07-21,1,1,1,0,booked,1,English,Commercial,Polk,train
+SYN-00490,2025-06-24,2025-07-24,2025-12-21,2025-06-24,0,0,0,0,positive_only,1,English,Commercial,Linn,train
+SYN-01424,2025-07-01,2025-07-31,2025-12-28,2025-07-01,0,0,0,0,positive_only,1,Spanish,Commercial,Johnson,train
+SYN-03589,2025-07-01,2025-07-31,2025-12-28,2025-07-31,1,1,1,0,booked,0,Spanish,Medicare,Johnson,train
+SYN-04973,2025-07-01,2025-07-31,2025-12-28,2025-07-16,1,1,0,0,accepted,1,English,Commercial,Linn,train
+SYN-01761,2025-07-07,2025-08-06,2026-01-03,2025-07-28,1,1,1,0,booked,0,English,Medicare,Johnson,train
+SYN-03223,2025-07-07,2025-08-06,2026-01-03,2025-07-07,0,0,0,0,positive_only,1,English,Medicare,Linn,train
+SYN-01158,2025-07-08,2025-08-07,2026-01-04,2025-07-28,1,0,0,0,referred,1,Spanish,Medicare,Scott,train
+SYN-03156,2025-07-09,2025-08-08,2026-01-05,2025-08-05,1,0,0,0,referred,1,Spanish,Medicare,Black Hawk,train
+SYN-03741,2025-07-11,2025-08-10,2026-01-07,2025-07-29,1,1,1,0,booked,1,Other / unknown,Medicare,Woodbury,train
+SYN-03439,2025-07-14,2025-08-13,2026-01-10,2025-07-14,0,0,0,0,positive_only,1,English,Commercial,Scott,train
+SYN-03924,2025-07-21,2025-08-20,2026-01-17,2025-07-31,1,1,0,0,accepted,0,Spanish,Commercial,Polk,train
+SYN-01812,2025-07-25,2025-08-24,2026-01-21,2025-08-18,1,1,0,0,accepted,0,Spanish,Medicare,Scott,train
+SYN-01977,2025-07-27,2025-08-26,2026-01-23,2025-07-27,0,0,0,0,positive_only,1,English,Commercial,Linn,train
+SYN-02053,2025-07-29,2025-08-28,2026-01-25,2025-08-17,1,1,0,0,accepted,0,English,Medicare,Polk,train
+SYN-03296,2025-07-30,2025-08-29,2026-01-26,2025-08-18,1,1,0,0,accepted,0,English,Medicare,Johnson,train
+SYN-03416,2025-08-01,2025-08-31,2026-01-28,2025-08-27,1,0,0,0,referred,1,Spanish,Medicare,Polk,train
+SYN-01753,2025-08-02,2025-09-01,2026-01-29,2025-08-29,1,1,0,0,accepted,0,English,Commercial,Scott,train
+SYN-01770,2025-08-02,2025-09-01,2026-01-29,2025-08-02,0,0,0,0,positive_only,1,Spanish,Commercial,Linn,train
+SYN-03720,2025-08-04,2025-09-03,2026-01-31,2025-08-04,0,0,0,0,positive_only,1,English,Commercial,Black Hawk,train
+SYN-02238,2025-08-05,2025-09-04,2026-02-01,2025-09-02,1,0,0,0,referred,0,English,Commercial,Black Hawk,train
+SYN-03065,2025-08-05,2025-09-04,2026-02-01,2025-09-04,1,0,0,0,referred,0,English,Commercial,Polk,train
+SYN-01533,2025-08-06,2025-09-05,2026-02-02,2025-08-19,1,1,0,0,accepted,1,English,Medicare,Scott,train
+SYN-03259,2025-08-06,2025-09-05,2026-02-02,2025-08-06,0,0,0,0,positive_only,1,Arabic,Medicaid,Woodbury,train
+SYN-03351,2025-08-06,2025-09-05,2026-02-02,2025-08-24,1,1,0,0,accepted,1,Spanish,Commercial,Scott,train
+SYN-04960,2025-08-17,2025-09-16,2026-02-13,2025-09-05,1,1,0,0,accepted,0,Spanish,Commercial,Black Hawk,train
+SYN-00017,2025-08-21,2025-09-20,2026-02-17,2025-09-17,1,1,0,0,accepted,1,English,Commercial,Johnson,train
+SYN-01254,2025-08-23,2025-09-22,2026-02-19,2025-08-23,0,0,0,0,positive_only,1,English,Uninsured / unknown,Johnson,train
+SYN-00806,2025-08-24,2025-09-23,2026-02-20,2025-09-19,1,0,0,0,referred,0,Other / unknown,Medicare,Woodbury,train
+SYN-00145,2025-08-27,2025-09-26,2026-02-23,2025-09-25,1,0,0,0,referred,1,English,Medicare,Linn,train
+SYN-02178,2025-08-30,2025-09-29,2026-02-26,2025-09-25,1,1,0,0,accepted,0,English,Medicare,Linn,train
+SYN-03336,2025-09-01,2025-10-01,2026-02-28,2025-09-29,1,0,0,0,referred,1,English,Uninsured / unknown,Woodbury,train
+SYN-04373,2025-09-01,2025-10-01,2026-02-28,2025-09-01,0,0,0,0,positive_only,1,English,Medicare,Black Hawk,train
+SYN-01721,2025-09-03,2025-10-03,2026-03-02,2025-09-25,1,1,0,0,accepted,0,Arabic,Uninsured / unknown,Polk,train
+SYN-03710,2025-09-08,2025-10-08,2026-03-07,2025-09-29,1,0,0,0,referred,0,Spanish,Uninsured / unknown,Linn,train
+SYN-02190,2025-09-10,2025-10-10,2026-03-09,2025-09-26,1,1,0,0,accepted,1,Arabic,Medicare,Polk,train
+SYN-02471,2025-09-11,2025-10-11,2026-03-10,2025-10-02,1,1,0,0,accepted,1,English,Medicare,Polk,train
+SYN-01729,2025-09-14,2025-10-14,2026-03-13,2025-10-13,1,0,0,0,referred,1,English,Medicare,Linn,excluded_label_not_available
+SYN-04114,2025-09-14,2025-10-14,2026-03-13,2025-09-14,0,0,0,0,positive_only,1,English,Commercial,Johnson,excluded_label_not_available
+SYN-03935,2025-09-15,2025-10-15,2026-03-14,2025-10-15,1,0,0,0,referred,0,English,Medicare,Linn,excluded_label_not_available
+SYN-01923,2025-09-21,2025-10-21,2026-03-20,2025-10-21,1,1,0,0,accepted,0,English,Medicaid,Linn,excluded_label_not_available
+SYN-04617,2025-09-24,2025-10-24,2026-03-23,2025-09-24,0,0,0,0,positive_only,1,English,Uninsured / unknown,Linn,excluded_label_not_available
+SYN-04004,2025-09-25,2025-10-25,2026-03-24,2025-10-12,1,1,0,0,accepted,0,English,Medicaid,Scott,excluded_label_not_available
+SYN-03646,2025-09-26,2025-10-26,2026-03-25,2025-10-17,1,1,0,0,accepted,1,English,Uninsured / unknown,Scott,excluded_label_not_available
+SYN-03943,2025-09-28,2025-10-28,2026-03-27,2025-10-15,1,1,0,0,accepted,1,English,Medicare,Woodbury,excluded_label_not_available
+SYN-00070,2025-09-30,2025-10-30,2026-03-29,2025-09-30,0,0,0,0,positive_only,1,English,Medicaid,Polk,excluded_label_not_available
+SYN-01224,2025-09-30,2025-10-30,2026-03-29,2025-10-12,1,1,0,0,accepted,0,Arabic,Medicaid,Woodbury,excluded_label_not_available
+SYN-01425,2025-09-30,2025-10-30,2026-03-29,2025-10-26,1,1,0,0,accepted,1,English,Medicaid,Polk,excluded_label_not_available
+SYN-02086,2025-09-30,2025-10-30,2026-03-29,2025-10-29,1,0,0,0,referred,1,English,Medicaid,Johnson,excluded_label_not_available
+SYN-02789,2025-09-30,2025-10-30,2026-03-29,2025-10-22,1,1,0,0,accepted,0,English,Commercial,Polk,excluded_label_not_available
+SYN-03624,2025-10-01,2025-10-31,2026-03-30,2025-10-01,0,0,0,0,positive_only,1,Spanish,Medicare,Johnson,excluded_label_not_available
+SYN-04126,2025-10-01,2025-10-31,2026-03-30,2025-10-19,1,1,1,0,booked,1,Other / unknown,Medicaid,Polk,excluded_label_not_available
+SYN-02726,2025-10-06,2025-11-05,2026-04-04,2025-10-06,0,0,0,0,positive_only,1,English,Commercial,Linn,excluded_label_not_available
+SYN-03132,2025-10-06,2025-11-05,2026-04-04,2025-10-24,1,1,0,0,accepted,1,English,Medicaid,Polk,excluded_label_not_available
+SYN-01588,2025-10-09,2025-11-08,2026-04-07,2025-11-05,1,1,0,0,accepted,1,Other / unknown,Commercial,Scott,excluded_label_not_available
+SYN-00962,2025-10-12,2025-11-11,2026-04-10,2025-11-07,1,0,0,0,referred,0,Other / unknown,Medicare,Polk,excluded_label_not_available
+SYN-04630,2025-10-13,2025-11-12,2026-04-11,2025-11-11,1,1,0,0,accepted,1,English,Commercial,Scott,excluded_label_not_available
+SYN-04696,2025-10-14,2025-11-13,2026-04-12,2025-10-14,0,0,0,0,positive_only,1,English,Commercial,Johnson,excluded_label_not_available
+SYN-02861,2025-10-20,2025-11-19,2026-04-18,2025-11-16,1,1,0,0,accepted,0,English,Medicare,Scott,excluded_label_not_available
+SYN-01601,2025-10-23,2025-11-22,2026-04-21,2025-11-12,1,0,0,0,referred,1,English,Commercial,Polk,excluded_label_not_available
+SYN-02544,2025-10-28,2025-11-27,2026-04-26,2025-11-08,1,1,0,0,accepted,0,English,Medicaid,Johnson,excluded_label_not_available
+SYN-01339,2025-10-30,2025-11-29,2026-04-28,2025-11-24,1,0,0,0,referred,1,English,Medicare,Black Hawk,excluded_label_not_available
+SYN-04034,2025-11-01,2025-12-01,2026-04-30,2025-11-01,0,0,0,0,positive_only,0,Spanish,Medicare,Polk,excluded_label_not_available
+SYN-01078,2025-11-03,2025-12-03,2026-05-02,2025-11-28,1,1,1,0,booked,0,English,Medicare,Woodbury,excluded_label_not_available
+SYN-00881,2025-11-05,2025-12-05,2026-05-04,2025-11-17,1,1,0,0,accepted,0,English,Commercial,Polk,excluded_label_not_available
+SYN-03023,2025-11-07,2025-12-07,2026-05-06,2025-12-05,1,1,0,0,accepted,0,Other / unknown,Medicaid,Scott,excluded_label_not_available
+SYN-00079,2025-11-11,2025-12-11,2026-05-10,2025-12-10,1,0,0,0,referred,1,English,Medicare,Polk,excluded_label_not_available
+SYN-02105,2025-11-12,2025-12-12,2026-05-11,2025-11-12,0,0,0,0,positive_only,1,English,Commercial,Scott,excluded_label_not_available
+SYN-04581,2025-11-14,2025-12-14,2026-05-13,2025-12-06,1,0,0,0,referred,1,Arabic,Medicare,Scott,excluded_label_not_available
+SYN-02714,2025-11-19,2025-12-19,2026-05-18,2025-12-17,1,1,1,0,booked,0,English,Commercial,Polk,excluded_label_not_available
+SYN-01511,2025-11-21,2025-12-21,2026-05-20,2025-11-21,0,0,0,0,positive_only,1,English,Uninsured / unknown,Linn,excluded_label_not_available
+SYN-01297,2025-11-24,2025-12-24,2026-05-23,2025-12-15,1,1,0,0,accepted,0,Arabic,Medicare,Black Hawk,excluded_label_not_available
+SYN-02786,2025-11-28,2025-12-28,2026-05-27,2025-11-28,0,0,0,0,positive_only,1,Spanish,Medicaid,Black Hawk,excluded_label_not_available
+SYN-01530,2025-11-30,2025-12-30,2026-05-29,2025-12-23,1,0,0,0,referred,0,Spanish,Medicaid,Black Hawk,excluded_label_not_available
+SYN-04223,2025-12-01,2025-12-31,2026-05-30,2025-12-20,1,1,0,0,accepted,0,Other / unknown,Medicaid,Woodbury,excluded_label_not_available
+SYN-03675,2025-12-03,2026-01-02,2026-06-01,2025-12-24,1,1,0,0,accepted,0,English,Commercial,Linn,excluded_label_not_available
+SYN-04500,2025-12-03,2026-01-02,2026-06-01,2025-12-03,0,0,0,0,positive_only,1,Spanish,Medicare,Scott,excluded_label_not_available
+SYN-00217,2025-12-04,2026-01-03,2026-06-02,2025-12-04,0,0,0,0,positive_only,1,Other / unknown,Commercial,Johnson,excluded_label_not_available
+SYN-01475,2025-12-06,2026-01-05,2026-06-04,2026-01-02,1,1,0,0,accepted,0,English,Medicare,Linn,excluded_label_not_available
+SYN-03162,2025-12-06,2026-01-05,2026-06-04,2025-12-22,1,1,1,0,booked,1,Spanish,Medicaid,Polk,excluded_label_not_available
+SYN-04436,2025-12-10,2026-01-09,2026-06-08,2025-12-28,1,1,0,0,accepted,1,English,Medicaid,Polk,excluded_label_not_available
+SYN-00819,2025-12-12,2026-01-11,2026-06-10,2026-01-05,1,1,0,0,accepted,1,English,Commercial,Polk,excluded_label_not_available
+SYN-02201,2025-12-14,2026-01-13,2026-06-12,2026-01-03,1,1,0,0,accepted,0,English,Commercial,Black Hawk,excluded_label_not_available
+SYN-04645,2025-12-16,2026-01-15,2026-06-14,2026-01-03,1,1,1,0,booked,1,English,Medicaid,Black Hawk,excluded_label_not_available
+SYN-04643,2025-12-18,2026-01-17,2026-06-16,2026-01-09,1,0,0,0,referred,0,English,Medicaid,Linn,excluded_label_not_available
+SYN-02031,2025-12-22,2026-01-21,2026-06-20,2026-01-10,1,1,0,0,accepted,0,Spanish,Medicaid,Polk,excluded_label_not_available
+SYN-04285,2025-12-22,2026-01-21,2026-06-20,2026-01-10,1,1,0,0,accepted,0,English,Medicare,Linn,excluded_label_not_available
+SYN-00696,2025-12-25,2026-01-24,2026-06-23,2026-01-24,1,0,0,0,referred,1,English,Commercial,Black Hawk,excluded_label_not_available
+SYN-02360,2025-12-25,2026-01-24,2026-06-23,2026-01-05,1,1,0,0,accepted,0,English,Medicare,Woodbury,excluded_label_not_available
+SYN-02976,2026-01-01,2026-01-31,2026-06-30,2026-01-18,1,1,0,0,accepted,0,English,Medicaid,Polk,excluded_label_not_available
+SYN-02341,2026-01-02,2026-02-01,2026-07-01,2026-02-01,1,1,0,0,accepted,1,English,Medicare,Polk,excluded_label_not_available
+SYN-03654,2026-01-03,2026-02-02,2026-07-02,2026-01-31,1,1,1,0,booked,0,English,Commercial,Black Hawk,excluded_label_not_available
+SYN-03717,2026-01-03,2026-02-02,2026-07-02,2026-01-03,0,0,0,0,positive_only,1,English,Commercial,Scott,excluded_label_not_available
+SYN-02631,2026-01-08,2026-02-07,2026-07-07,2026-01-25,1,1,0,0,accepted,1,English,Medicare,Woodbury,excluded_label_not_available
+SYN-00144,2026-01-09,2026-02-08,2026-07-08,2026-01-11,1,0,0,0,referred,1,English,Medicaid,Johnson,excluded_label_not_available
+SYN-00563,2026-01-11,2026-02-10,2026-07-10,2026-01-21,1,1,0,0,accepted,1,English,Medicaid,Black Hawk,excluded_label_not_available
+SYN-00780,2026-01-11,2026-02-10,2026-07-10,2026-02-05,1,1,0,0,accepted,1,English,Commercial,Polk,excluded_label_not_available
+SYN-04748,2026-01-11,2026-02-10,2026-07-10,2026-02-09,1,1,0,0,accepted,1,English,Commercial,Black Hawk,excluded_label_not_available
+SYN-02812,2026-01-12,2026-02-11,2026-07-11,2026-02-02,1,1,0,0,accepted,1,English,Medicare,Polk,excluded_label_not_available
+SYN-04286,2026-01-14,2026-02-13,2026-07-13,2026-01-28,1,1,0,0,accepted,1,English,Medicare,Black Hawk,excluded_label_not_available
+SYN-03063,2026-01-17,2026-02-16,2026-07-16,2026-02-01,1,1,0,0,accepted,0,English,Medicare,Linn,excluded_label_not_available
+SYN-02457,2026-01-18,2026-02-17,2026-07-17,2026-02-08,1,1,0,0,accepted,0,English,Medicaid,Black Hawk,excluded_label_not_available
+SYN-04856,2026-01-19,2026-02-18,2026-07-18,2026-02-15,1,1,0,0,accepted,1,Spanish,Medicare,Polk,excluded_label_not_available
+SYN-02055,2026-01-21,2026-02-20,2026-07-20,2026-02-11,1,0,0,0,referred,0,English,Commercial,Linn,excluded_label_not_available
+SYN-01203,2026-01-27,2026-02-26,2026-07-26,2026-02-17,1,1,1,0,booked,0,English,Commercial,Scott,excluded_label_not_available
+SYN-04336,2026-01-27,2026-02-26,2026-07-26,2026-02-08,1,1,0,0,accepted,0,Spanish,Medicaid,Scott,excluded_label_not_available
+SYN-02303,2026-01-30,2026-03-01,2026-07-29,2026-02-25,1,0,0,0,referred,1,English,Medicare,Polk,excluded_label_not_available
+SYN-04881,2026-02-02,2026-03-04,2026-08-01,2026-02-25,1,1,0,0,accepted,0,English,Medicare,Polk,excluded_label_not_available
+SYN-00978,2026-02-09,2026-03-11,2026-08-08,2026-03-05,1,0,0,0,referred,1,English,Medicaid,Scott,excluded_label_not_available
+SYN-01916,2026-02-10,2026-03-12,2026-08-09,2026-03-03,1,0,0,0,referred,0,Spanish,Medicaid,Woodbury,evaluation
+SYN-03676,2026-02-10,2026-03-12,2026-08-09,2026-03-09,1,0,0,0,referred,1,English,Commercial,Woodbury,evaluation
+SYN-04680,2026-02-15,2026-03-17,2026-08-14,2026-03-10,1,1,0,0,accepted,0,English,Medicaid,Polk,evaluation
+SYN-04648,2026-02-18,2026-03-20,2026-08-17,2026-03-20,1,0,0,0,referred,1,Spanish,Uninsured / unknown,Johnson,evaluation
+SYN-03025,2026-02-20,2026-03-22,2026-08-19,2026-03-21,1,0,0,0,referred,1,Other / unknown,Medicare,Johnson,evaluation
+SYN-04749,2026-02-20,2026-03-22,2026-08-19,2026-03-22,1,0,0,0,referred,0,English,Commercial,Polk,evaluation
+SYN-04843,2026-02-20,2026-03-22,2026-08-19,2026-02-20,0,0,0,0,positive_only,1,English,Uninsured / unknown,Polk,evaluation
+SYN-04427,2026-02-21,2026-03-23,2026-08-20,2026-03-03,1,1,1,0,booked,0,Arabic,Medicare,Scott,evaluation
+SYN-03502,2026-02-24,2026-03-26,2026-08-23,2026-03-21,1,1,1,0,booked,0,Spanish,Commercial,Linn,evaluation
+SYN-01405,2026-02-25,2026-03-27,2026-08-24,2026-03-17,1,1,0,0,accepted,1,English,Commercial,Linn,evaluation
+SYN-02419,2026-02-27,2026-03-29,2026-08-26,2026-03-08,1,0,0,0,referred,1,Arabic,Uninsured / unknown,Polk,evaluation
+SYN-02698,2026-03-02,2026-04-01,2026-08-29,2026-04-01,1,1,0,0,accepted,0,English,Commercial,Linn,evaluation
+SYN-04722,2026-03-03,2026-04-02,2026-08-30,2026-04-02,1,0,0,0,referred,1,Spanish,Medicare,Linn,evaluation
+SYN-01481,2026-03-05,2026-04-04,2026-09-01,2026-04-01,1,1,0,0,accepted,0,English,Medicare,Linn,evaluation
+SYN-01054,2026-03-07,2026-04-06,2026-09-03,2026-03-31,1,0,0,0,referred,0,English,Medicare,Johnson,evaluation
+SYN-04813,2026-03-09,2026-04-08,2026-09-05,2026-04-02,1,1,1,0,booked,0,English,Commercial,Woodbury,evaluation
+SYN-02010,2026-03-12,2026-04-11,2026-09-08,2026-03-12,0,0,0,0,positive_only,1,Spanish,Commercial,Scott,evaluation
+SYN-04465,2026-03-13,2026-04-12,2026-09-09,2026-03-28,1,1,1,0,booked,1,English,Commercial,Linn,evaluation
+SYN-00732,2026-03-17,2026-04-16,2026-09-13,2026-04-16,1,1,1,0,booked,0,English,Medicaid,Polk,evaluation
+SYN-04152,2026-03-19,2026-04-18,2026-09-15,2026-04-03,1,1,0,0,accepted,1,English,Uninsured / unknown,Polk,evaluation
+SYN-03419,2026-03-22,2026-04-21,2026-09-18,2026-04-04,1,1,0,0,accepted,0,English,Commercial,Linn,evaluation
+SYN-04797,2026-03-25,2026-04-24,2026-09-21,2026-04-16,1,1,0,0,accepted,0,English,Medicaid,Polk,evaluation
+SYN-01602,2026-03-26,2026-04-25,2026-09-22,2026-04-20,1,0,0,0,referred,0,English,Uninsured / unknown,Polk,evaluation
+SYN-04651,2026-03-26,2026-04-25,2026-09-22,2026-03-27,1,0,0,0,referred,1,English,Commercial,Scott,evaluation
+SYN-04713,2026-03-27,2026-04-26,2026-09-23,2026-04-08,1,1,0,0,accepted,0,English,Medicare,Linn,evaluation
+SYN-03981,2026-03-28,2026-04-27,2026-09-24,2026-04-18,1,1,0,0,accepted,1,Arabic,Medicaid,Polk,evaluation
+SYN-02412,2026-03-30,2026-04-29,2026-09-26,2026-04-17,1,1,1,0,booked,0,Arabic,Commercial,Johnson,evaluation
+SYN-04063,2026-03-31,2026-04-30,2026-09-27,2026-04-22,1,1,1,0,booked,0,English,Medicare,Linn,evaluation
+SYN-00709,2026-04-02,2026-05-02,2026-09-29,2026-04-22,1,1,1,0,booked,0,Other / unknown,Medicare,Johnson,evaluation
+SYN-03836,2026-04-02,2026-05-02,2026-09-29,2026-04-30,1,1,1,0,booked,0,Spanish,Commercial,Polk,evaluation
+SYN-00792,2026-04-07,2026-05-07,2026-10-04,2026-04-07,0,0,0,0,positive_only,1,English,Medicare,Black Hawk,evaluation
+SYN-01430,2026-04-07,2026-05-07,2026-10-04,2026-04-26,1,1,0,0,accepted,0,English,Medicare,Polk,evaluation
+SYN-00768,2026-04-11,2026-05-11,2026-10-08,2026-05-02,1,1,0,0,accepted,0,English,Commercial,Woodbury,evaluation
+SYN-03144,2026-04-13,2026-05-13,2026-10-10,2026-05-13,1,1,0,0,accepted,1,Arabic,Medicare,Woodbury,evaluation
+SYN-04595,2026-04-16,2026-05-16,2026-10-13,2026-05-02,1,1,1,0,booked,0,Other / unknown,Commercial,Polk,evaluation
+SYN-02288,2026-04-17,2026-05-17,2026-10-14,2026-05-05,1,1,0,0,accepted,1,English,Uninsured / unknown,Johnson,evaluation
+SYN-04710,2026-04-17,2026-05-17,2026-10-14,2026-05-12,1,0,0,0,referred,0,Arabic,Uninsured / unknown,Scott,evaluation
+SYN-00386,2026-04-18,2026-05-18,2026-10-15,2026-05-11,1,1,0,0,accepted,1,English,Commercial,Linn,evaluation
+SYN-00687,2026-04-18,2026-05-18,2026-10-15,2026-05-13,1,1,0,0,accepted,0,English,Medicare,Polk,evaluation
+SYN-03472,2026-04-20,2026-05-20,2026-10-17,2026-05-20,1,1,0,0,accepted,1,English,Commercial,Johnson,evaluation
+SYN-01112,2026-04-21,2026-05-21,2026-10-18,2026-04-21,0,0,0,0,positive_only,1,English,Medicare,Johnson,evaluation
+SYN-02261,2026-04-23,2026-05-23,2026-10-20,2026-04-23,0,0,0,0,positive_only,1,English,Medicare,Linn,evaluation
+SYN-02096,2026-04-26,2026-05-26,2026-10-23,2026-04-26,0,0,0,0,positive_only,1,English,Medicare,Johnson,evaluation
+SYN-00149,2026-04-27,2026-05-27,2026-10-24,2026-04-27,0,0,0,0,positive_only,1,English,Commercial,Johnson,evaluation
+SYN-02876,2026-05-07,2026-06-06,2026-11-03,2026-05-07,0,0,0,0,positive_only,1,English,Medicaid,Black Hawk,evaluation
+SYN-02762,2026-05-08,2026-06-07,2026-11-04,2026-06-02,1,1,0,0,accepted,0,English,Medicare,Scott,evaluation
+SYN-01740,2026-05-10,2026-06-09,2026-11-06,2026-05-10,0,0,0,0,positive_only,0,Arabic,Commercial,Black Hawk,evaluation

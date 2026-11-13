@@ -1,0 +1,5 @@
+"id","label","zh","action","entered","progressed","not_progressed","conversion_rate","not_progressed_rate"
+"positive_to_referral","Positive FIT → referral","阳性 → 转诊","Verify the referral record; assign follow-up ownership.","157","130","27","0.8280254777070064","0.17197452229299362"
+"referral_to_acceptance","Referral → receiving-provider acceptance","转诊 → 接诊确认","Confirm receipt, acceptance and accountable provider.","130","123","7","0.9461538461538461","0.05384615384615385"
+"acceptance_to_booking","Accepted referral → appointment","接诊确认 → 预约","Review scheduling access and the documented support need.","123","104","19","0.8455284552845529","0.15447154471544716"
+"appointment_to_procedure","Appointment → completed colonoscopy","预约 → 检查完成","Separate dates beyond the window from due appointments without completion evidence.","104","71","33","0.6826923076923077","0.3173076923076923"
