@@ -1,0 +1,23 @@
+/* Shared visual language with the care coordination workspace. */
+h1{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:32px;font-weight:700;letter-spacing:-1px}
+.sidebar{background:#203f39;color:#fff;border-right:0;padding:32px 22px}
+.brand{font-size:45px;font-weight:750;letter-spacing:-4px;color:#fff}
+.brand-dot{color:#e8ad53;padding-left:12px}
+.brand-caption{margin:18px 0 22px;color:#d9e8dc;font-size:10px;letter-spacing:1.8px}
+.workspace-return{display:block;margin:22px 0 12px;color:#d9e8dc;font-size:11px;text-decoration:none}
+.workspace-label{color:#cad8d0;margin:0 10px 13px}
+.workspace-label span{color:#edbd78;background:#365c50}
+.sidebar nav button{color:#cad8d0;border-radius:9px;padding:14px 10px}
+.sidebar nav button:hover,.sidebar nav button.active{background:#365c50;color:#fff}
+.nav-count{background:#e3ede6;color:#245747}
+.sidebar-note{border-color:#547166;margin-top:24px;padding-top:18px}
+.sidebar-note p{font-family:inherit;font-size:13px;color:#d9e8dc;line-height:1.8}
+.sidebar-note .mini-label,.sidebar-note small{color:#a4c1b3}
+.sidebar-bottom button,.sidebar-bottom a{color:#d9e8dc}
+.competition-name{border-color:#547166;color:#a4c1b3}
+.small-rule{background:#e8ad53}
+.topbar{background:#fff;border-color:#dbe3db}
+.status-dot{background:#cb912e}
+.disclosure{background:#f7e8c9;border-color:#dfc58e;color:#223b36}
+.disclosure-tag{color:#83571e}
+@media(min-width:1101px){.sidebar{width:246px}.shell{margin-left:246px}}
