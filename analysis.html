@@ -3,15 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#43273e">
+  <meta name="theme-color" content="#203f39">
   <meta name="description" content="Loop: a synthetic-data prototype for closing the FIT screening-to-care loop. Future Health Digital Innovation Challenge, Population Health.">
   <title>Loop · Screening to care</title>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Loop · Closing the screening-to-care loop">
   <meta property="og:description" content="Interactive prototype on synthetic data. It shows where follow-up after a positive FIT stops and who owns the next step. No login needed.">
   <meta name="twitter:card" content="summary">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%2343273e'/%3E%3Ccircle cx='16' cy='20' r='9' fill='none' stroke='%23f0d9cf' stroke-width='3'/%3E%3Ccircle cx='25' cy='20' r='9' fill='none' stroke='%23c99cb5' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23203f39'/%3E%3Ccircle cx='16' cy='20' r='9' fill='none' stroke='%23f0d9cf' stroke-width='3'/%3E%3Ccircle cx='25' cy='20' r='9' fill='none' stroke='%23e8ad53' stroke-width='3'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="analysis-theme.css">
   <script src="data/demo-data.js" defer></script>
   <script src="metrics.js" defer></script>
   <script src="leakage.js" defer></script>
@@ -24,8 +25,8 @@
 <body>
   <a class="skip" href="#main">Skip to dashboard</a>
   <aside class="sidebar">
-    <a class="brand" href="#cascade" aria-label="Loop home"><span class="brand-mark" aria-hidden="true">∞</span>loop<span class="brand-dot">.</span></a>
-    <a href="index.html" style="display:block;margin:14px 0;color:#fff">← Care coordination workspace</a><div class="brand-caption">SCREENING TO CARE</div>
+    <a class="brand" href="#cascade" aria-label="Loop home">loop<span class="brand-dot">↗</span></a>
+    <a href="index.html" class="workspace-return">← Care coordination workspace</a><div class="brand-caption">SCREENING TO CARE</div>
     <button class="mobile-info" id="mobile-methods-btn" aria-label="Data and definitions">ⓘ Data notes</button>
     <div class="workspace-label">CARE OPERATIONS <span>DEMO</span></div>
     <nav aria-label="Dashboard pages" id="navigation">
@@ -74,3 +75,4 @@
   <noscript><div class="noscript">Loop needs JavaScript to display the local synthetic dataset. You can still read <a href="docs/TECHNICAL_DOCUMENTATION.html">the technical documentation</a> or open <a href="data/cohort.csv">the synthetic CSV</a>.</div></noscript>
 </body>
 </html>
+
