@@ -30,7 +30,7 @@ An approved clinical partner must provide the care pathway and authorized data a
 
 ## Validation and demonstration
 
-`npm test` runs 27 JavaScript checks: eight new FHIR/workflow/runtime checks and 19 existing cohort/analysis checks. Syntax checks pass for the new scripts. Browser visual/end-to-end verification was blocked by the execution environment: local HTTP binding is denied and browser file URLs are prohibited. No visual QA or production deployment is claimed.
+`npm test` runs 30 JavaScript checks: eleven new FHIR/workflow/runtime checks and 19 existing cohort/analysis checks. Syntax checks pass for the new scripts. Browser visual/end-to-end verification was blocked by the execution environment: local HTTP binding is denied and browser file URLs are prohibited. No visual QA or production deployment is claimed.
 
 Demo sequence: open Operations overview; inspect DEMO-001; try closure to observe evidence blocking; save an owner and barrier; draft and approve outreach without sending; replay the three FHIR events; review DEMO-004 with source evidence and complete the manual closure checklist; inspect/export Review & audit. Open the separate policy simulation to show the scientific work without presenting it as clinical decision support.
 
@@ -39,3 +39,11 @@ Demo sequence: open Operations overview; inspect DEMO-001; try closure to observ
 - HL7 FHIR R4 Bundle: https://hl7.org/fhir/R4/bundle.html
 - USPSTF colorectal cancer screening: https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/colorectal-cancer-screening
 - Existing evidence register: `SOURCES.md`
+
+## V4.1 operational additions
+
+Added a task board with overdue/open/completed filters, named owner and due-date handoffs, and completion requiring an explicit review and note. Case closure additionally blocks while open tasks remain. Each episode now includes notes, a task list and a session activity timeline. The worklist supports multi-select owner assignment and owner filtering; assignments update open task owners. Team performance shows workload, overdue tasks, documented barriers and reconciliation counts, with a downloadable JSON snapshot. These are descriptive demo counts.
+
+FHIR mapping now checks resource IDs, malformed dates and orphan Appointment patient references. Missing or multiple positive-FIT evidence, a missing procedure date, a procedure before FIT or a report before the procedure marks the episode for source reconciliation and blocks closure. This does not replace episode-aware source reconciliation or full FHIR validation.
+
+Tasks use a fixed 18 November demo reference date. Refresh clears the session; import replaces episode tasks and notes. No reminders are delivered.
