@@ -30,7 +30,7 @@ An approved clinical partner must provide the care pathway and authorized data a
 
 ## Validation and demonstration
 
-`npm test` runs 26 JavaScript checks: seven new FHIR/workflow checks and 19 existing cohort/analysis checks. Syntax checks pass for the new scripts. Browser visual/end-to-end verification was blocked by the execution environment: local HTTP binding is denied and browser file URLs are prohibited. No visual QA or production deployment is claimed.
+`npm test` runs 27 JavaScript checks: eight new FHIR/workflow/runtime checks and 19 existing cohort/analysis checks. Syntax checks pass for the new scripts. Browser visual/end-to-end verification was blocked by the execution environment: local HTTP binding is denied and browser file URLs are prohibited. No visual QA or production deployment is claimed.
 
 Demo sequence: open Operations overview; inspect DEMO-001; try closure to observe evidence blocking; save an owner and barrier; draft and approve outreach without sending; replay the three FHIR events; review DEMO-004 with source evidence and complete the manual closure checklist; inspect/export Review & audit. Open the separate policy simulation to show the scientific work without presenting it as clinical decision support.
 
