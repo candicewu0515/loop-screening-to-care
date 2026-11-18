@@ -1,7 +1,7 @@
 {
   "resourceType": "Bundle",
   "type": "collection",
-  "timestamp": "2026-11-18T09:00:00Z",
+  "timestamp": "2026-11-18T12:00:00Z",
   "entry": [
     {
       "resource": {
@@ -352,7 +352,12 @@
         "subject": {
           "reference": "Patient/DEMO-004"
         },
-        "performedDateTime": "2026-11-15T14:00:00Z"
+        "performedDateTime": "2026-11-15T14:00:00Z",
+        "report": [
+          {
+            "reference": "DiagnosticReport/report-DEMO-004"
+          }
+        ]
       }
     },
     {
@@ -728,7 +733,12 @@
         "subject": {
           "reference": "Patient/DEMO-008"
         },
-        "performedDateTime": "2026-11-15T14:00:00Z"
+        "performedDateTime": "2026-11-15T14:00:00Z",
+        "report": [
+          {
+            "reference": "DiagnosticReport/report-DEMO-008"
+          }
+        ]
       }
     },
     {
@@ -1104,7 +1114,12 @@
         "subject": {
           "reference": "Patient/DEMO-012"
         },
-        "performedDateTime": "2026-11-15T14:00:00Z"
+        "performedDateTime": "2026-11-15T14:00:00Z",
+        "report": [
+          {
+            "reference": "DiagnosticReport/report-DEMO-012"
+          }
+        ]
       }
     },
     {
