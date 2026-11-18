@@ -5,7 +5,7 @@ window.LoopModelLab=(function(){
   const data=()=>window.LOOP_MODEL_DATA;
   function curveSVG(points,xKey,yKey,maxX,label,reference=false){
     const x=v=>48+v/maxX*600,y=v=>222-v*180;
-    return `<svg viewBox="0 0 700 275" role="img" aria-label="${esc(label)}" class="model-chart">${[0,.25,.5,.75,1].map(v=>`<line x1="48" y1="${y(v)}" x2="648" y2="${y(v)}" stroke="#e8dfe5"/><text x="37" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#786b75">${pct(v)}</text>`).join('')}${[0,maxX/2,maxX].map(v=>`<text x="${x(v)}" y="245" text-anchor="middle" font-size="11" fill="#786b75">${v}</text>`).join('')}${reference?'<path d="M48,222 L648,42" fill="none" stroke="#bbadb7" stroke-dasharray="5 5"/>':''}<path d="${points.map((p,i)=>(i?'L':'M')+x(p[xKey])+','+y(p[yKey])).join(' ')}" stroke="#633a58" stroke-width="3" fill="none"/><text x="350" y="268" text-anchor="middle" font-size="11" fill="#786b75">${esc(label)}</text></svg>`;
+    return `<svg viewBox="0 0 700 275" role="img" aria-label="${esc(label)}" class="model-chart">${[0,.25,.5,.75,1].map(v=>`<line x1="48" y1="${y(v)}" x2="648" y2="${y(v)}" stroke="#e1e6e4"/><text x="37" y="${y(v)+4}" text-anchor="end" font-size="11" fill="#6d7672">${pct(v)}</text>`).join('')}${[0,maxX/2,maxX].map(v=>`<text x="${x(v)}" y="245" text-anchor="middle" font-size="11" fill="#6d7672">${v}</text>`).join('')}${reference?'<path d="M48,222 L648,42" fill="none" stroke="#afb9b5" stroke-dasharray="5 5"/>':''}<path d="${points.map((p,i)=>(i?'L':'M')+x(p[xKey])+','+y(p[yKey])).join(' ')}" stroke="#245747" stroke-width="3" fill="none"/><text x="350" y="268" text-anchor="middle" font-size="11" fill="#6d7672">${esc(label)}</text></svg>`;
   }
   function render(k=10){
     const r=data(),s=r.split,p=r.performance,cap=r.capacity.predicted_miss_probability[k-1],rule=r.capacity.rule_score[k-1];
@@ -24,3 +24,4 @@ window.LoopModelLab=(function(){
   function card(label,value,detail){return `<article class="kpi"><div class="kpi-label">${label}</div><div class="kpi-value">${value}</div><div class="kpi-foot">${detail}</div></article>`;}
   return {render};
 })();
+
