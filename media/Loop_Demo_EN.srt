@@ -1,0 +1,107 @@
+1
+00:00:00,273 --> 00:00:03,200
+Where do patients fall out of follow-up?
+
+2
+00:00:03,559 --> 00:00:04,964
+Loop starts with that question.
+
+3
+00:00:05,505 --> 00:00:08,277
+Here are 5,000 fictional screening episodes.
+
+4
+00:00:08,286 --> 00:00:11,073
+Among positive results with a full follow-up window,
+
+5
+00:00:11,377 --> 00:00:15,436
+45% had a colonoscopy within 180 days.
+
+6
+00:00:19,091 --> 00:00:21,982
+The largest gap comes after an appointment is booked.
+
+7
+00:00:22,650 --> 00:00:25,091
+Clicking that stage reveals individual records.
+
+8
+00:00:25,359 --> 00:00:28,055
+An empty completion field tells us to investigate.
+
+9
+00:00:28,377 --> 00:00:30,727
+It does not prove that someone missed their appointment.
+
+10
+00:00:39,091 --> 00:00:41,564
+Now we move from analysis to action.
+
+11
+00:00:42,014 --> 00:00:44,909
+This separate workspace contains 12 synthetic cases.
+
+12
+00:00:45,250 --> 00:00:49,345
+I find one patient, then assign a navigator to own the next step.
+
+13
+00:01:00,909 --> 00:01:03,945
+Here, the source record shows a positive test,
+
+14
+00:01:04,141 --> 00:01:05,545
+but no completed procedure.
+
+15
+00:01:05,977 --> 00:01:09,891
+I select transport support and prepare an outreach draft for review.
+
+16
+00:01:12,727 --> 00:01:16,273
+A reviewer checks patient preferences before approving the draft.
+
+17
+00:01:16,795 --> 00:01:19,036
+This demonstration sends no messages.
+
+18
+00:01:20,000 --> 00:01:22,600
+Closing the case is a separate decision.
+
+19
+00:01:23,486 --> 00:01:26,055
+Required tasks and evidence are still missing,
+
+20
+00:01:26,123 --> 00:01:27,673
+so closure is blocked.
+
+21
+00:01:28,105 --> 00:01:30,091
+A reminder is not proof of care.
+
+22
+00:01:31,818 --> 00:01:34,927
+Next, I replay a synthetic referral event.
+
+23
+00:01:35,595 --> 00:01:37,368
+The integration monitor shows what arrived,
+
+24
+00:01:37,377 --> 00:01:40,527
+and the worklist moves from referral needed to awaiting booking.
+
+25
+00:01:42,727 --> 00:01:46,291
+The same navigator stays accountable as new evidence arrives.
+
+26
+00:01:47,909 --> 00:01:50,109
+The audit trail records each action.
+
+27
+00:01:50,395 --> 00:01:52,345
+Every gap has a next step.
